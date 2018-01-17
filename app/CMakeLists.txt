@@ -38,3 +38,8 @@ else()
     add_subdirectory("../deps/moui/moui" "moui")
     target_link_libraries(app PUBLIC moui )
 endif()
+
+# Adds depdendency through hunter.
+hunter_add_package(yaml-cpp)
+find_package(yaml-cpp CONFIG REQUIRED)
+target_link_libraries(app PUBLIC yaml-cpp::yaml-cpp)

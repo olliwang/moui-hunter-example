@@ -13,7 +13,7 @@ building the iOS and macOS app as follow:
     cd mac
 
     # Generates the Xcode project for out-of-source builds
-    cmake -H. -Bbuild -GXcode
+    cmake -H. -Bbuild -GXcode -DCMAKE_TOOLCHAIN_FILE=toolchain.cmake
 
 Then you can open the generated Xcode project in the `build` directory to build
 and run the demo app.

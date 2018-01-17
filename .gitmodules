@@ -1,3 +1,9 @@
 [submodule "deps/moui"]
 	path = deps/moui
 	url = https://github.com/ollix/moui.git
+[submodule "deps/polly"]
+	path = deps/polly
+	url = https://github.com/ruslo/polly.git
+[submodule "deps/gate"]
+	path = deps/gate
+	url = https://github.com/hunter-packages/gate.git

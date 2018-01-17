@@ -24,12 +24,18 @@
 #include "app/demo_view.h"
 
 #include "moui/moui.h"
+#include "yaml-cpp/yaml.h"
 
 namespace app {
 
 DemoView::DemoView() {
   SetWidth(moui::Widget::Unit::kPercent, 100);
   SetHeight(moui::Widget::Unit::kPercent, 100);
+
+  YAML::Node rgb = YAML::Load("[102, 255, 204]");
+  set_background_color(nvgRGB(rgb[0].as<int>(),
+                              rgb[1].as<int>(),
+                              rgb[2].as<int>()));
 }
 
 DemoView::~DemoView() {
