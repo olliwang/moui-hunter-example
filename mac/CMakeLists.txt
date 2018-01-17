@@ -14,12 +14,13 @@
 
 cmake_minimum_required(VERSION 3.4.1)
 
+include("../deps/cmake/hunter.cmake")
+
 set(PROJECT_NAME "MouiHunterDemo-Mac")
 
 project(${PROJECT_NAME})
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/Archives)
-set(CMAKE_OSX_SYSROOT "macosx")
 
 set(RESOURCES "MainMenu.xib")
 
