@@ -21,8 +21,21 @@
 # ---
 # Author: olliwang@ollix.com (Olli Wang)
 
-cmake_minimum_required(VERSION 3.4.1)
+cmake_minimum_required(VERSION 3.9.2)
+
+set(gen_toolchain "${CMAKE_CURRENT_BINARY_DIR}/generated/toolchain.cmake")
+configure_file(
+    "../../deps/cmake/android_studio_toolchain.cmake"
+    "${gen_toolchain}"
+    @ONLY
+)
+set(CMAKE_TOOLCHAIN_FILE "${gen_toolchain}" CACHE PATH "" FORCE)
+
+include("../../deps/cmake/hunter.cmake")
+
+project(app-jni)
 
 add_library(app-jni SHARED "src/main/cpp/jni.cc")
 add_subdirectory("../../app" "app")
 target_link_libraries(app-jni PRIVATE app)
+set_target_properties(app-jni PROPERTIES DEBUG_POSTFIX "")
