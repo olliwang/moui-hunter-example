@@ -22,4 +22,4 @@
 # Author: olliwang@ollix.com (Olli Wang)
 
 set(CMAKE_OSX_DEPLOYMENT_TARGET "10.10")
-include("${CMAKE_CURRENT_LIST_DIR}/../deps/polly/osx-10-13.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/../deps/polly/osx-10-14.cmake")

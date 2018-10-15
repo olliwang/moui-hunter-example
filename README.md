@@ -18,6 +18,8 @@ building the iOS and macOS app as follow:
 Then you can open the generated Xcode project in the `build` directory to build
 and run the demo app.
 
+*PS. For macOS, you may need to modify `mac/toolchain.cmake` if you are not using macOS Mojave 10.14.*
+
 ## Build the Android target
 
 The `android` directory is the root of an Android Studio project configured with Gradle and CMake build system. Thus you can simply build and
@@ -25,12 +27,12 @@ run the app in Android Studio or through the `gradlew` command line.
 
 Tested with:
 
-* CMake 3.10.2 (minimum version required: 3.9.2)
-* Android Studio 3.2 Canary 4 (lower version may not work)
-* macOS High Sierra 10.13.2
+* CMake 3.12.2 (minimum version required: 3.9.2)
+* Android Studio 3.2 (lower version may not work)
+* macOS Mojave 10.14
 
 Before you build the app.
 
 * Appends `cmake.dir=<path-to-cmake>` to the generated `android/local.properties` file.
-* Updates `classpath 'com.android.tools.build:gradle:3.2.0-alpha04'` in
+* Updates `classpath 'com.android.tools.build:gradle:3.2.0'` in
   `android/build.gradle` to the actual Android Studio version you are using.
