@@ -22,5 +22,5 @@
 # Author: olliwang@ollix.com (Olli Wang)
 
 include("${CMAKE_CURRENT_LIST_DIR}/../gate/cmake/HunterGate.cmake")
-HunterGate(URL "https://github.com/ruslo/hunter/archive/v0.23.34.tar.gz"
-           SHA1 "70287b1ffa810ee4e952052a9adff9b4856d0d54")
+HunterGate(URL "https://github.com/ruslo/hunter/archive/v0.23.123.tar.gz"
+           SHA1 "e28cbf2464e922bbeaec0c7d9ad35bc45670435d")

@@ -21,7 +21,7 @@
 # ---
 # Author: olliwang@ollix.com (Olli Wang)
 
-cmake_minimum_required(VERSION 3.9.2)
+cmake_minimum_required(VERSION 3.10.2)
 
 set(gen_toolchain "${CMAKE_CURRENT_BINARY_DIR}/generated/toolchain.cmake")
 configure_file(

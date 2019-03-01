@@ -27,12 +27,13 @@ run the app in Android Studio or through the `gradlew` command line.
 
 Tested with:
 
-* CMake 3.12.2 (minimum version required: 3.9.2)
-* Android Studio 3.2 (lower version may not work)
+* CMake 3.10.2 (minimum version required: 3.10.2)
+* Android Studio 3.3.1 (lower version may not work)
+* NDK r18 (NDK r19+ does not support)
 * macOS Mojave 10.14
 
 Before you build the app.
 
 * Appends `cmake.dir=<path-to-cmake>` to the generated `android/local.properties` file.
-* Updates `classpath 'com.android.tools.build:gradle:3.2.0'` in
+* Updates `classpath 'com.android.tools.build:gradle:3.3.1'` in
   `android/build.gradle` to the actual Android Studio version you are using.
