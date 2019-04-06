@@ -34,6 +34,5 @@ Tested with:
 
 Before you build the app.
 
-* Appends `cmake.dir=<path-to-cmake>` to the generated `android/local.properties` file.
-* Updates `classpath 'com.android.tools.build:gradle:3.3.1'` in
+* Updates `classpath 'com.android.tools.build:gradle:3.3.2'` in
   `android/build.gradle` to the actual Android Studio version you are using.
