@@ -28,11 +28,6 @@ run the app in Android Studio or through the `gradlew` command line.
 Tested with:
 
 * CMake 3.10.2 (minimum version required: 3.10.2)
-* Android Studio 3.3.1 (lower version may not work)
+* Android Studio 3.5 (lower version may not work)
 * NDK r18 (NDK r19+ does not support)
-* macOS Mojave 10.14
-
-Before you build the app.
-
-* Updates `classpath 'com.android.tools.build:gradle:3.3.2'` in
-  `android/build.gradle` to the actual Android Studio version you are using.
+* macOS Catalina 10.15 beta 6 (build 19A536g)
