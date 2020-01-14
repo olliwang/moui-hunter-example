@@ -2,6 +2,11 @@
 
 This project demonstrates how to build a cross-platform [moui](https://github.com/ollix/moui) app with third-party libraries by utilizing [hunter](https://github.com/ruslo/hunter).
 
+### Donation
+If you found this project useful, please consider donating to show your support ❤️ 
+
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3366Q3AVUJLTQ)
+
 ## Generate Xcode projects
 
 A moui app uses [CMake](https://cmake.org) to generate the Xcode project for
